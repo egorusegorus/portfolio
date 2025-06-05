@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="topbar" role="navigation" aria-label="Główne menu">
+      <ul class="language-switch" role="menubar" aria-label="Wybór języka">
+        <li><button data-lang="pl" data-i18n="lang_pl">PL</button></li>
+        <li><button data-lang="en" data-i18n="lang_en">EN</button></li>
+        <li><button data-lang="de" data-i18n="lang_de">DE</button></li>
+      </ul>
+      <ul class="nav-links" role="menubar">
+        <li><button data-page="about" data-i18n="about">About Me</button></li>
+        <li><button data-page="projekty" data-i18n="projekty">Projects</button></li>
+        <li><button data-page="kontakt" data-i18n="kontakt">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <aside class="side left" aria-hidden="true"></aside>
+    <section class="content" id="main-content" tabindex="0" aria-live="polite">
+      <!-- Dynamiczna zawartość -->
+    </section>
+    <aside class="side right" aria-hidden="true"></aside>
+  </main>
+
+  <footer class="footer" style="padding: 1em; text-align: center; font-size: 0.9em; border-top: 1px solid #ccc; margin-top: 2em;">
+    <h2>Impressum</h2>
+    <p>Tomasz Okraszewski<br>
+       Webentwickler<br>
+       Beispielstraße 12<br>
+       10115 Berlin<br>
+       Deutschland<br>
+       E-Mail: kontakt@okraszewski.dev<br>
+       USt-IdNr: DE123456789
+    </p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
