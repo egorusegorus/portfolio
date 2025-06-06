@@ -49,6 +49,12 @@ document.querySelector('[data-page="about"]').click();
 
 // Ustaw język i zaznacz aktywny przycisk
 setLanguage("en");
+document.getElementById("show-impresium").addEventListener("click", function(e) {
+    e.preventDefault();
+    const section = document.getElementById("impresium-section");
+    section.style.display = section.style.display === "none" ? "block" : "none";
+});
+
 
 const defaultLangButton = document.querySelector('[data-lang="en"]');
 if (defaultLangButton) {
